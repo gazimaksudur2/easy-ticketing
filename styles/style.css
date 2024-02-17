@@ -1,0 +1,17 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
