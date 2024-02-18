@@ -1,539 +1,490 @@
 <!DOCTYPE html>
 <html lang="en" data-Theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "col-80": "#030712CC",
-              "col-60": "#0307127C",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "col-80": "#030712CC",
+            "col-60": "#0307127C",
           },
         },
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Online Pro Ticketing</title>
-  </head>
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Online Pro Ticketing</title>
+</head>
 
-  <body>
-    <header class="mx-20 mt-10">
-      <nav class="font-raleway">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
+<body>
+  <header class="mx-20 mt-10">
+    <nav class="font-raleway">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <a class="btn btn-ghost text-xl">TransitEase Paribahan</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Item 1</a></li>
               <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
               </li>
               <li><a>Item 3</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn">Button</a>
+          <a class="btn btn-ghost text-xl">TransitEase Paribahan</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-white mt-10">
+    <!-- Banner section goes here  -->
+    <section
+      class="banner mx-20 mb-32 bg-[url('images/banner.png')] w-[92%] bg-cover min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8">
+      <h1 class="font-raleway font-extrabold text-5xl text-center leading-snug">
+        <span class="text-white">Your Ultimate Bus Ticketing Solution</span><br /><span
+          class="text-6xl text-[#1DD100]">TransitEase Paribahan</span>
+      </h1>
+      <p class="text-white font-inter text-lg font-normal w-2/3 text-center">
+        Our online bus ticketing platform offers users a convenient and
+        hassle-free way to book bus tickets, providing them with flexibility,
+        choice, and peace of mind when planning their journeys
+      </p>
+      <button class="bg-[#1DD100] border-none text-[#030712] font-raleway text-xl font-bold py-4 px-8 rounded-xl">
+        Buy Tickets
+      </button>
+    </section>
+    <!-- Best offers section -->
+    <section class="best-offers mx-20 mb-32 space-y-12 flex flex-col items-center">
+      <h2 class="font-raleway text-center text-[#030712] text-4xl font-bold">
+        Best offers for you
+      </h2>
+      <div class="coupon-container flex justify-center gap-10">
+        <div class="new-coupon w-[35rem] flex justify-between bg-amber-400 rounded-2xl">
+          <div class="left flex flex-col justify-center space-y-2 py-10 pl-10 font-inter">
+            <h2 class="text-[#030712CC] text-3xl font-extrabold">15% off</h2>
+            <h5 class="text-[#030712CC] text-xl font-semibold">
+              on your first purchase
+            </h5>
+            <p class="text-[#0307129C] text-lg font-medium">
+              use by February 2024
+            </p>
+          </div>
+          <div class="p-0 divider text-white m-0 min-h-full">
+            <img class="h-full object-cover" src="images/cupon-devider.png" alt="" />
+          </div>
+          <div class="right flex flex-col justify-center items-center py-10 pr-10 space-y-2 font-inter">
+            <h2 class="text-[#030712] text-3xl font-bold font-raleway">
+              NEW15
+            </h2>
+            <p class="text-[#03071280]">Coupon Code</p>
           </div>
         </div>
-      </nav>
-    </header>
-    <main class="bg-[#F7F8F8] mt-10">
-      <!-- Banner section goes here  -->
-      <section
-        class="banner mx-20 mb-32 bg-[url('images/banner.png')] w-[92%] bg-cover min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8"
-      >
-        <h1
-          class="font-raleway font-extrabold text-5xl text-center leading-snug"
-        >
-          <span class="text-white">Your Ultimate Bus Ticketing Solution</span
-          ><br /><span class="text-6xl text-[#1DD100]"
-            >TransitEase Paribahan</span
-          >
-        </h1>
-        <p class="text-white font-inter text-lg font-normal w-2/3 text-center">
-          Our online bus ticketing platform offers users a convenient and
-          hassle-free way to book bus tickets, providing them with flexibility,
-          choice, and peace of mind when planning their journeys
-        </p>
-        <button
-          class="bg-[#1DD100] border-none text-[#030712] font-raleway text-xl font-bold py-4 px-8 rounded-xl"
-        >
-          Buy Tickets
-        </button>
-      </section>
-      <!-- Best offers section -->
-      <section
-        class="best-offers mx-20 mb-32 space-y-12 flex flex-col items-center"
-      >
-        <h2 class="font-raleway text-center text-[#030712] text-4xl font-bold">
-          Best offers for you
+        <div class="couple-coupon w-[38rem] flex justify-between bg-pink-400 rounded-2xl">
+          <div class="left flex flex-col justify-center space-y-2 py-10 pl-10 font-inter">
+            <h2 class="text-[#030712CC] text-3xl font-extrabold">20% off</h2>
+            <h5 class="text-[#030712CC] text-xl font-semibold">
+              on first couple purchase
+            </h5>
+            <p class="text-[#0307129C] text-lg font-medium">
+              use by March 2024
+            </p>
+          </div>
+          <div class="p-0 divider text-white m-0 min-h-full">
+            <img class="h-full p-0 object-cover" src="images/cupon-devider.png" alt="" />
+          </div>
+          <div class="right flex flex-col justify-center items-center py-10 pr-10 space-y-2 font-inter">
+            <h2 class="text-[#030712] text-3xl font-bold font-raleway">
+              Couple 20
+            </h2>
+            <p class="text-[#03071280]">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-outline btn-success px-8 py-4 capitalize">
+        See all offers
+      </button>
+    </section>
+    <!-- Buying tickets section -->
+    <section
+      class="activity-container flex flex-col justify-center items-center m-0 border-t-4 border-[#1DD100] rounded-full">
+      <div class="description w-1/2 p-20 flex flex-col items-center text-center justify-center gap-6">
+        <h2 class="font-raleway text-4xl font-bold text-[#030712]">
+          TransitEase Paribahan
         </h2>
-        <div class="coupon-container flex justify-center gap-10">
-          <div
-            class="new-coupon w-[35rem] flex justify-between bg-amber-400 rounded-2xl"
-          >
-            <div
-              class="left flex flex-col justify-center space-y-2 py-10 pl-10 font-inter"
-            >
-              <h2 class="text-[#030712CC] text-3xl font-extrabold">15% off</h2>
-              <h5 class="text-[#030712CC] text-xl font-semibold">
-                on your first purchase
-              </h5>
-              <p class="text-[#0307129C] text-lg font-medium">
-                use by February 2024
-              </p>
+        <p class="font-inter text-lg font-normal text-[#0307128C]">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+    </section>
+    <section class="activity-section pb-20 mx-40 mb-32">
+      <div class="trip-info bg-[#e6e7e27a] -pb-10 p-0 rounded-xl flex gap-10">
+        <div class="py-8 pl-12 w-2/3">
+          <div class="flex flex-col justify-between items-center lg:flex-row">
+            <div class="info flex items-center gap-2">
+              <img class="object-cover scale-75" src="images/bus-logo.png" alt="" />
+              <div class="bus-info">
+                <h2 class="font-raleway text-[#030712] text-3xl font-bold">
+                  TransitEase Paribahan
+                </h2>
+                <h5 class="font-inter text-[#0307129C]">
+                  Coach-009-WEB ! AC_Business
+                </h5>
+              </div>
             </div>
-            <div class="p-0 divider text-white m-0 min-h-full">
-              <img
-                class="h-full object-cover"
-                src="images/cupon-devider.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="right flex flex-col justify-center items-center py-10 pr-10 space-y-2 font-inter"
-            >
-              <h2 class="text-[#030712] text-3xl font-bold font-raleway">
-                NEW15
-              </h2>
-              <p class="text-[#03071280]">Coupon Code</p>
+            <div class="allocation">
+              <button class="btn capitalize bg-[#1DD1002A] font-inter font-medium text-lg">
+                <img src="images/seat-green.png" alt="" />
+                <span class="">40</span>
+                <span class="capitalize">seats left</span>
+              </button>
             </div>
           </div>
-          <div
-            class="couple-coupon w-[38rem] flex justify-between bg-pink-400 rounded-2xl"
-          >
-            <div
-              class="left flex flex-col justify-center space-y-2 py-10 pl-10 font-inter"
-            >
-              <h2 class="text-[#030712CC] text-3xl font-extrabold">20% off</h2>
-              <h5 class="text-[#030712CC] text-xl font-semibold">
-                on first couple purchase
+          <div class="flex my-6 p-8 rounded-lg flex-col space-y-6 bg-[#03071210]">
+            <div class="route pb-3 flex justify-between items-center border-b-2 border-dashed border-gray-300">
+              <h5 class="font-raleway text-lg font-semibold text-[#0307125A]">
+                Route
               </h5>
-              <p class="text-[#0307129C] text-lg font-medium">
-                use by March 2024
-              </p>
+              <h5 class="capitalize font-raleway text-lg font-semibold text-[#030712CC]">
+                dhaka - sylhet
+              </h5>
             </div>
-            <div class="p-0 divider text-white m-0 min-h-full">
-              <img
-                class="h-full p-0 object-cover"
-                src="images/cupon-devider.png"
-                alt=""
-              />
+            <div class="depart pb-3 flex justify-between items-center border-b-2 border-dashed border-gray-300">
+              <h5 class="capitalize font-raleway text-lg font-semibold text-[#0307125A]">
+                departure time
+              </h5>
+              <h5 class="uppercase font-raleway text-lg font-semibold text-[#030712CC]">
+                9:00 pm
+              </h5>
             </div>
-            <div
-              class="right flex flex-col justify-center items-center py-10 pr-10 space-y-2 font-inter"
-            >
-              <h2 class="text-[#030712] text-3xl font-bold font-raleway">
-                Couple 20
-              </h2>
-              <p class="text-[#03071280]">Coupon Code</p>
+            <div class="labels flex justify-between gap-2">
+              <button class="text-[#030712AC] text-[16px] btn capitalize">
+                Boarding point - abdullahpur
+              </button>
+              <button class="btn text-[#030712AC] text-[16px] capitalize">
+                dropping point - Khadim-nagar
+              </button>
+              <button class="btn text-[#030712AC] text-[16px] capitalize">
+                Est. time - 06 hour
+              </button>
             </div>
           </div>
         </div>
-        <button class="btn btn-outline btn-success px-8 py-4 capitalize">
-          See all offers
-        </button>
-      </section>
-      <!-- Buying tickets section -->
-      <section
-        class="activity-container flex flex-col justify-center items-center m-0 border-t-4 border-[#1DD100] rounded-full"
-      >
-        <div
-          class="description w-1/2 p-20 flex flex-col items-center text-center justify-center gap-6"
-        >
-          <h2 class="font-raleway text-4xl font-bold text-[#030712]">
-            TransitEase Paribahan
+        <div class="divider m-0 h-full">
+          <img src="images/info-devider.png" alt="" />
+        </div>
+        <div class="fare w-1/6 space-y-1 flex flex-col justify-center items-center">
+          <img class="mb-4" src="images/fare.png" alt="" />
+          <h2 class="font-raleway text-3xl font-bold text-[#030712]">
+            550 Taka
           </h2>
-          <p class="font-inter text-lg font-normal text-[#0307128C]">
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated testing features allow for a streamlined .
-          </p>
+          <h5 class="capitalize font-raleway font-semibold text-[#0307128C]">
+            per seat
+          </h5>
         </div>
-      </section>
-      <section class="activity-section pb-20 mx-40 mb-32">
-        <div class="trip-info -pb-10 p-0 bg-white rounded-xl flex gap-10">
-          <div class="py-8 pl-12 w-2/3">
-            <div class="flex flex-col justify-between items-center lg:flex-row">
-              <div class="info flex items-center gap-2">
-                <img
-                  class="object-cover scale-75"
-                  src="images/bus-logo.png"
-                  alt=""
-                />
-                <div class="bus-info">
-                  <h2 class="font-raleway text-[#030712] text-3xl font-bold">
-                    TransitEase Paribahan
-                  </h2>
-                  <h5 class="font-inter text-[#0307129C]">
-                    Coach-009-WEB ! AC_Business
-                  </h5>
+      </div>
+      <!-- account container starts here  -->
+      <div class="account-container mt-10 p-0 bg-[#e6f2a87a] rounded-xl flex gap-10">
+        <div class="seats w-3/5 py-8 pl-12 flex flex-col gap-4">
+          <h2 class="font-raleway text-2xl font-semibold">
+            Select Your Seat
+          </h2>
+          <div class="avaiability py-4 border-y-2 border-dashed border-gray-300 flex justify-between items-center">
+            <div class="available flex items-center justify-between gap-3">
+              <img src="images/seat-gray.png" alt="" />
+              <p class="font-inter text-lg font-medium">Available</p>
+            </div>
+            <div class="selected flex items-center justify-between gap-3">
+              <img src="images/seat-green-filled.png" alt="" />
+              <p class="font-inter text-lg font-medium">Selected</p>
+            </div>
+          </div>
+          <div class="steering w-full mt-2 flex justify-end">
+            <button class="btn btn-lg bg-slate-400 px-10">
+              <img src="images/steering.png" alt="" />
+            </button>
+          </div>
+          <div class="seat-container mt-5 flex flex-col justify-between gap-4">
+            <div id="a" class="a-seats flex items-center">
+              <p class="w-1/6 text-center">A</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="a1" class="btn px-8">A1</button>
+                  <button id="a2" class="btn px-8">A2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="a3" class="btn px-8">A3</button>
+                  <button id="a4" class="btn px-8">A4</button>
                 </div>
               </div>
-              <div class="allocation">
-                <button
-                  class="btn capitalize bg-[#1DD1002A] font-inter font-medium text-lg"
-                >
-                  <img src="images/seat-green.png" alt="" />
-                  <span class="">40</span>
-                  <span class="capitalize">seats left</span>
-                </button>
+            </div>
+            <div id="b" class="b-seats flex items-center">
+              <p class="w-1/6 text-center">B</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="b1" class="btn px-8">B1</button>
+                  <button id="b2" class="btn px-8">B2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="b3" class="btn px-8">B3</button>
+                  <button id="b4" class="btn px-8">B4</button>
+                </div>
               </div>
             </div>
-            <div
-              class="flex my-6 p-8 rounded-lg flex-col space-y-6 bg-[#03071210]"
-            >
-              <div
-                class="route pb-3 flex justify-between items-center border-b-2 border-dashed border-gray-300"
-              >
-                <h5 class="font-raleway text-lg font-semibold text-[#0307125A]">
-                  Route
-                </h5>
-                <h5
-                  class="capitalize font-raleway text-lg font-semibold text-[#030712CC]"
-                >
-                  dhaka - sylhet
-                </h5>
-              </div>
-              <div
-                class="depart pb-3 flex justify-between items-center border-b-2 border-dashed border-gray-300"
-              >
-                <h5
-                  class="capitalize font-raleway text-lg font-semibold text-[#0307125A]"
-                >
-                  departure time
-                </h5>
-                <h5
-                  class="uppercase font-raleway text-lg font-semibold text-[#030712CC]"
-                >
-                  9:00 pm
-                </h5>
-              </div>
-              <div class="labels flex justify-between gap-2">
-                <button class="text-[#030712AC] text-[16px] btn capitalize">
-                  Boarding point - abdullahpur
-                </button>
-                <button class="btn text-[#030712AC] text-[16px] capitalize">
-                  dropping point - Khadim-nagar
-                </button>
-                <button class="btn text-[#030712AC] text-[16px] capitalize">
-                  Est. time - 06 hour
-                </button>
+            <div id="c" class="c-seats flex items-center">
+              <p class="w-1/6 text-center">C</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="c1" class="btn px-8">C1</button>
+                  <button id="c2" class="btn px-8">C2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="c3" class="btn px-8">C3</button>
+                  <button id="c4" class="btn px-8">C4</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="divider m-0 h-full">
-            <img src="images/info-devider.png" alt="" />
-          </div>
-          <div
-            class="fare w-1/6 space-y-1 flex flex-col justify-center items-center"
-          >
-            <img class="mb-4" src="images/fare.png" alt="" />
-            <h2 class="font-raleway text-3xl font-bold text-[#030712]">
-              550 Taka
-            </h2>
-            <h5 class="capitalize font-raleway font-semibold text-[#0307128C]">
-              per seat
-            </h5>
+            <div id="d" class="d-seats flex items-center">
+              <p class="w-1/6 text-center">D</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="d1" class="btn px-8">D1</button>
+                  <button id="d2" class="btn px-8">D2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="d3" class="btn px-8">D3</button>
+                  <button id="d4" class="btn px-8">D4</button>
+                </div>
+              </div>
+            </div>
+            <div id="e" class="e-seats flex items-center">
+              <p class="w-1/6 text-center">E</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="e1" class="btn px-8">E1</button>
+                  <button id="e2" class="btn px-8">E2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="e3" class="btn px-8">E3</button>
+                  <button id="e4" class="btn px-8">E4</button>
+                </div>
+              </div>
+            </div>
+            <div id="f" class="f-seats flex items-center">
+              <p class="w-1/6 text-center">F</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="f1" class="btn px-8">F1</button>
+                  <button id="f2" class="btn px-8">F2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="f3" class="btn px-8">F3</button>
+                  <button id="f4" class="btn px-8">F4</button>
+                </div>
+              </div>
+            </div>
+            <div id="g" class="g-seats flex items-center">
+              <p class="w-1/6 text-center">G</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="g1" class="btn px-8">G1</button>
+                  <button id="g2" class="btn px-8">G2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="g3" class="btn px-8">G3</button>
+                  <button id="g4" class="btn px-8">G4</button>
+                </div>
+              </div>
+            </div>
+            <div id="h" class="h-seats flex items-center">
+              <p class="w-1/6 text-center">H</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="h1" class="btn px-8">H1</button>
+                  <button id="h2" class="btn px-8">H2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="h3" class="btn px-8">H3</button>
+                  <button id="h4" class="btn px-8">H4</button>
+                </div>
+              </div>
+            </div>
+            <div id="i" class="i-seats flex items-center">
+              <p class="w-1/6 text-center">I</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="i1" class="btn px-8">I1</button>
+                  <button id="i2" class="btn px-8">I2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="i3" class="btn px-8">I3</button>
+                  <button id="i4" class="btn px-8">I4</button>
+                </div>
+              </div>
+            </div>
+            <div id="j" class="j-seats flex items-center">
+              <p class="w-1/6 text-center">J</p>
+              <div class="seat-div w-5/6 flex justify-between">
+                <div class="left w-[40%] flex flex-row justify-between items-center">
+                  <button id="j1" class="btn px-8">J1</button>
+                  <button id="j2" class="btn px-8">J2</button>
+                </div>
+                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="j3" class="btn px-8">J3</button>
+                  <button id="j4" class="btn px-8">J4</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- account container starts here  -->
-        <div
-          class="account-container mt-10 p-0 bg-white rounded-xl flex gap-10"
-        >
-          <div class="seats w-3/5 py-8 pl-12 flex flex-col gap-4">
-            <h2 class="font-raleway text-2xl font-semibold">Select Your Seat</h2>
-            <div class="avaiability py-4 border-y-2 border-dashed border-gray-300 flex justify-between items-center">
-              <div class="available flex items-center justify-between gap-3">
-                <img src="images/seat-gray.png" alt="" />
-                <p class="font-inter text-lg font-medium">Available</p>
-              </div>
-              <div class="selected flex items-center justify-between gap-3">
-                <img src="images/seat-green-filled.png" alt="" />
-                <p class="font-inter text-lg font-medium">Selected</p>
-              </div>
+        <!-- <div class="divider divide-dashed lg:divider-horizontal"></div>  -->
+        <div class="accounts w-1/3 p-8 space-y-1 border-l-2 border-dashed border-gray-300">
+          <h2 class="font-raleway pb-5 text-2xl font-semibold border-b-2 border-dashed border-gray-300">
+            Confirm & Pay for Your Seat
+          </h2>
+          <div class="confirm-box py-4 flex flex-col justify-between items-center gap-4">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Seat <span class="bg-green-500 p-1 rounded-full">2</span>
+                  </th>
+                  <th>Class</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>C2</td>
+                  <td>Business</td>
+                  <td>550</td>
+                </tr>
+                <tr class="border-t-2 border-dashed border-gray-300">
+                  <td colspan="2">Total Price</td>
+                  <td>BDT <span>1100</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="hidden discounted w-full p-4 border-2 box-border rounded-md bg-orange-300 flex justify-between">
+              <h3 class="font-inter text-lg font-medium">
+                Discount Achieved
+              </h3>
+              <h2>BDT <span class="font-bold"> 200</span></h2>
             </div>
-            <div class="steering w-full mt-2 flex justify-end">
-              <button class="btn btn-lg px-10">
-                <img src="images/steering.png" alt="" />
+            <div class="coupon-apply w-full flex">
+              <input type="text" placeholder="Have any coupon?"
+                class="input input-bordered input-success w-full max-w-xs rounded-l-lg rounded-r-none" />
+              <button class="btn btn-success rounded-r-lg rounded-l-none">
+                Apply
               </button>
             </div>
             <div
-              class="seat-container mt-5 flex flex-col justify-between gap-4"
-            >
-              <div id="a" class="a-seats flex items-center">
-                <p class="w-1/6 text-center">A</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="a1" class="btn px-8">A1</button>
-                    <button id="a2" class="btn px-8">A2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="a3" class="btn px-8">A3</button>
-                    <button id="a4" class="btn px-8">A4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="b" class="b-seats flex items-center">
-                <p class="w-1/6 text-center">B</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="b1" class="btn px-8">B1</button>
-                    <button id="b2" class="btn px-8">B2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="b3" class="btn px-8">B3</button>
-                    <button id="b4" class="btn px-8">B4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="c" class="c-seats flex items-center">
-                <p class="w-1/6 text-center">C</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="c1" class="btn px-8">C1</button>
-                    <button id="c2" class="btn px-8">C2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="c3" class="btn px-8">C3</button>
-                    <button id="c4" class="btn px-8">C4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="d" class="d-seats flex items-center">
-                <p class="w-1/6 text-center">D</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="d1" class="btn px-8">D1</button>
-                    <button id="d2" class="btn px-8">D2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="d3" class="btn px-8">D3</button>
-                    <button id="d4" class="btn px-8">D4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="e" class="e-seats flex items-center">
-                <p class="w-1/6 text-center">E</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="e1" class="btn px-8">E1</button>
-                    <button id="e2" class="btn px-8">E2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="e3" class="btn px-8">E3</button>
-                    <button id="e4" class="btn px-8">E4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="f" class="f-seats flex items-center">
-                <p class="w-1/6 text-center">F</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="f1" class="btn px-8">F1</button>
-                    <button id="f2" class="btn px-8">F2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="f3" class="btn px-8">F3</button>
-                    <button id="f4" class="btn px-8">F4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="g" class="g-seats flex items-center">
-                <p class="w-1/6 text-center">G</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="g1" class="btn px-8">G1</button>
-                    <button id="g2" class="btn px-8">G2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="g3" class="btn px-8">G3</button>
-                    <button id="g4" class="btn px-8">G4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="h" class="h-seats flex items-center">
-                <p class="w-1/6 text-center">H</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="h1" class="btn px-8">H1</button>
-                    <button id="h2" class="btn px-8">H2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="h3" class="btn px-8">H3</button>
-                    <button id="h4" class="btn px-8">H4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="i" class="i-seats flex items-center">
-                <p class="w-1/6 text-center">I</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="i1" class="btn px-8">I1</button>
-                    <button id="i2" class="btn px-8">I2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="i3" class="btn px-8">I3</button>
-                    <button id="i4" class="btn px-8">I4</button>
-                  </div>
-                </div>
-              </div>
-              <div id="j" class="j-seats flex items-center">
-                <p class="w-1/6 text-center">J</p>
-                <div class="seat-div w-5/6 flex justify-between">
-                  <div
-                    class="left w-[40%] flex flex-row justify-between items-center"
-                  >
-                    <button id="j1" class="btn px-8">J1</button>
-                    <button id="j2" class="btn px-8">J2</button>
-                  </div>
-                  <div
-                    class="right w-[40%] flex flex-row justify-between items-center gap-8"
-                  >
-                    <button id="j3" class="btn px-8">J3</button>
-                    <button id="j4" class="btn px-8">J4</button>
-                  </div>
-                </div>
-              </div>
+              class="grand-total w-full p-4 font-inter text-lg border-2 border-green-800 bg-green-300 rounded-lg font-medium flex justify-between">
+              <p class="total-text">Grand Total</p>
+              <h2>BDT <span id="grand-total">900</span></h2>
             </div>
-          </div>
-          <!-- <div class="divider divide-dashed lg:divider-horizontal"></div>  -->
-          <div
-            class="accounts w-1/3 space-y-1 border-l-2 border-dashed flex flex-col justify-center items-center"
-          >
-          <h2 class="font-raleway pb-5 text-2xl font-semibold border-b-2 border-dashed border-gray-300">Confirm & Pay for Your Seat</h2>
-          <div class="ticket py-4 flex justify-between items-center">
-            <img class="mb-4" src="images/fare.png" alt="" />
-            <h2 class="font-raleway text-3xl font-bold text-[#030712]">
-              550 Taka
-            </h2>
-            <h5 class="capitalize font-raleway font-semibold text-[#0307128C]">
-              per seat
-            </h5>
+            <form id="my-form" class="w-full my-10 text-[#030712] font-inter text-lg font-semibold space-y-5">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text">Passenger Name*</span>
+                </div>
+                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" required />
+              </label>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text">Phone Number*</span>
+                </div>
+                <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered w-full"
+                  required />
+              </label>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text">Email ID</span>
+                </div>
+                <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full" />
+              </label>
+              <button class="btn w-full bg-[#1dd100] text-white hover:bg-[#1dd100ac] disabled:bg-[#1dd1003c] btn-wide"
+                disabled>Wide</button>
+              <div class="links w-3/4 mx-auto text-xs font-normal flex justify-between">
+                <a href="http://">Terms & Conditions</a>
+                <a href="http://">Cancellation Policy</a>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-    </main>
-    <footer
-      class="py-10 px-28 space-y-10 bg-neutral text-neutral-content flex-col justify-between"
-    >
-      <div class="upper-container footer justify-between text-neutral-content">
-        <aside>
-          <h2>TransitEase Paribahan</h2>
-          <p>
-            TransitEase Ticketing is a digital platform to make your journeys
-            awesome and memorable.
-          </p>
-        </aside>
-        <nav class="flex flex-col items-end">
-          <h6 class="footer-title">Download our app</h6>
-          <div class="grid grid-flow-col gap-4">
-            <a>
-              <img class="rounded-lg" src="images/google_play.jpg" alt="" />
-            </a>
-          </div>
-        </nav>
       </div>
-      <hr class="border-dashed" />
-      <div class="lower-container flex justify-between">
-        <p>Copyright © 2024 - All right reserved</p>
-        <div class="terms-container w-1/3 flex justify-between">
-          <p class="capitalize">Terms & conditions</p>
-          <p class="capitalize">return & refund policy</p>
-          <p class="capitalize">Privacy policy</p>
+    </section>
+  </main>
+  <footer class="py-10 px-28 space-y-10 bg-[#030712] text-neutral-content flex-col justify-between">
+    <div class="upper-container footer justify-between text-neutral-content">
+      <aside class="w-3/4 space-y-3">
+        <h2 class="text-3xl font-raleway font-bold">TransitEase Paribahan</h2>
+        <p class="text-[16px] ">
+          TransitEase Ticketing is a digital platform to make your journeys
+          awesome and memorable.
+        </p>
+      </aside>
+      <nav class="flex flex-col items-end">
+        <h6 class="footer-title text-2xl">Download our app</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <img class="rounded-lg" src="images/google_play.jpg" alt="" />
+          </a>
         </div>
+      </nav>
+    </div>
+    <hr class="border-dashed" />
+    <div class="lower-container flex justify-between">
+      <p>Copyright © 2024 - All right reserved</p>
+      <div class="terms-container w-1/3 flex justify-between">
+        <p class="capitalize">Terms & conditions</p>
+        <p class="capitalize">return & refund policy</p>
+        <p class="capitalize">Privacy policy</p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <script src="scripts/utility.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
