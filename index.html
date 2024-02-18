@@ -11,6 +11,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'col-80': '#030712CC',
+                        'col-60': '#0307127C',
                     }
                 }
             }
@@ -76,12 +78,13 @@
             </div>
         </nav>
     </header>
-    <main class="mt-10">
+    <main class="bg-[#F7F8F8] mt-10">
         <!-- Banner section goes here  -->
         <section
             class="banner mx-20 mb-32 bg-[url('images/banner.png')] w-[92%] bg-cover  min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8">
-            <h1 class="font-raleway font-extrabold text-7xl text-center leading-snug"><span class="text-white">Your
-                    Ultimate Bus Ticketing Solution</span><br><span class="text-[#1DD100]">TransitEase Paribahan</span>
+            <h1 class="font-raleway font-extrabold text-5xl text-center leading-snug"><span class="text-white">Your
+                    Ultimate Bus Ticketing Solution</span><br><span class="text-6xl text-[#1DD100]">TransitEase
+                    Paribahan</span>
             </h1>
             <p class="text-white font-inter text-lg font-normal w-2/3 text-center">Our online bus ticketing platform
                 offers users a convenient and hassle-free way to book bus tickets,
@@ -134,58 +137,59 @@
                     results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
         </section>
-        <section class="activity-section  mx-52 mb-32">
-            <div class="trip-info flex">
-                <div class="min-h-1/2 bg-base-200">
-                    <div class="flex flex-col lg:flex-row">
-                        <img src="images/bus-logo.png" alt="">
-                        <div class="info">
-                            <h2>TransitEase Paribahan</h2>
-                            <h5>Coach-009-WEB ! AC_Business</h5>
+        <section class="activity-section pb-20 mx-40 mb-32">
+            <div class="trip-info -pb-10 p-0 bg-white rounded-xl flex gap-10">
+                <div class="py-8 pl-12 w-2/3">
+                    <div class="flex flex-col justify-between items-center lg:flex-row">
+                        <div class="info flex items-center gap-2">
+                            <img class="object-cover scale-75" src="images/bus-logo.png" alt="">
+                            <div class="bus-info">
+                                <h2 class="font-raleway text-[#030712] text-3xl font-bold">TransitEase Paribahan</h2>
+                                <h5 class="font-inter text-[#0307129C]">Coach-009-WEB ! AC_Business</h5>
+                            </div>
                         </div>
                         <div class="allocation">
-                            <img src="images/seat-green.png" alt="">
-                            <span class="">40</span>
-                            <span class="capitalize">seats left</span>
+                            <button class="btn capitalize bg-[#1DD1002A] font-inter font-medium text-lg">
+                                <img src="images/seat-green.png" alt="">
+                                <span class="">40</span>
+                                <span class="capitalize">seats left</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="route">
-                            <h5>Route</h5>
-                            <h5>dhaka-sylhet</h5>
+                    <div class="flex my-6 p-8 rounded-lg flex-col space-y-6 bg-[#03071210]">
+                        <div class="route pb-3 flex justify-between items-center border-b-2 border-dashed border-gray-300">
+                            <h5 class="font-raleway text-lg font-semibold text-[#0307125A]">Route</h5>
+                            <h5 class="capitalize font-raleway text-lg font-semibold text-[#030712CC]">dhaka - sylhet</h5>
                         </div>
-                        <div class="depart">
-                            <h5>departure time</h5>
-                            <h5 class="uppercase">9:00 pm</h5>
+                        <div class="depart pb-3 flex justify-between items-center border-b-2 border-dashed border-gray-300">
+                            <h5 class="capitalize font-raleway text-lg font-semibold text-[#0307125A]">departure time</h5>
+                            <h5 class="uppercase font-raleway text-lg font-semibold text-[#030712CC]">9:00 pm</h5>
                         </div>
-                        <div class="labels">
-                            <button class="btn capitalize">
+                        <div class="labels flex justify-between gap-2">
+                            <button class="text-[#030712AC] text-[16px] btn capitalize">
                                 Boarding point - abdullahpur
-                                <div class="badge">+99</div>
                             </button>
-                            <button class="btn capitalize">
+                            <button class="btn text-[#030712AC] text-[16px] capitalize">
                                 dropping point - Khadim-nagar
-                                <div class="badge">+99</div>
                             </button>
-                            <button class="btn capitalize">
+                            <button class="btn text-[#030712AC] text-[16px] capitalize">
                                 Est. time - 06 hour
-                                <div class="badge">+99</div>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="divider m-0 w-[15%] h-full">
-                    <img class="w-full h-full" src="images/info-devider.png" alt="">
+                <div class="divider m-0 h-full">
+                    <img src="images/info-devider.png" alt="">
                 </div>
-                <div class="fare ">
-                    <img class="" src="images/fare.png" alt="">
-                    <h2>550 Taka</h2>
-                    <h5 class="capitalize">per seat</h5>
+                <div class="fare w-1/6 space-y-1 flex flex-col justify-center items-center">
+                    <img class="mb-4" src="images/fare.png" alt="">
+                    <h2 class="font-raleway text-3xl font-bold text-[#030712]">550 Taka</h2>
+                    <h5 class="capitalize font-raleway font-semibold text-[#0307128C]">per seat</h5>
                 </div>
             </div>
             <div class="account-container">
                 <div class="seats">
-                    
+
                 </div>
                 <div class="accounts"></div>
             </div>
