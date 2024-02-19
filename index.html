@@ -175,7 +175,7 @@
             <div class="allocation">
               <button class="btn capitalize bg-[#1DD1002A] font-inter font-medium text-lg">
                 <img src="images/seat-green.png" alt="" />
-                <span class="">40</span>
+                <span id="avail" class="">40</span>
                 <span class="capitalize">seats left</span>
               </button>
             </div>
@@ -383,25 +383,17 @@
             Confirm & Pay for Your Seat
           </h2>
           <div class="confirm-box py-4 flex flex-col justify-between items-center gap-4">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>
-                    Seat <span class="bg-green-500 p-1 rounded-full">2</span>
-                  </th>
-                  <th>Class</th>
-                  <th>Price</th>
-                </tr>
+            <table id="table" class="table">
+              <thead class="text-lg font-semibold">
+                <th>Seat <span id="filled" class="bg-green-500 text-white p-1 rounded-full">0</span>
+                </th>
+                <th>Class</th>
+                <th>Fare</th>
               </thead>
-              <tbody>
-                <tr>
-                  <td>C2</td>
-                  <td>Business</td>
-                  <td>550</td>
-                </tr>
+              <tbody class="text-lg">
                 <tr class="border-t-2 border-dashed border-gray-300">
                   <td colspan="2">Total Price</td>
-                  <td>BDT <span>1100</span></td>
+                  <td>BDT <span id="total-fare">00</span></td>
                 </tr>
               </tbody>
             </table>
@@ -409,19 +401,19 @@
               <h3 class="font-inter text-lg font-medium">
                 Discount Achieved
               </h3>
-              <h2>BDT <span class="font-bold"> 200</span></h2>
+              <h2>BDT <span id="discount" class="font-bold"> 200</span></h2>
             </div>
             <div class="coupon-apply w-full flex">
-              <input type="text" placeholder="Have any coupon?"
+              <input id="coupon-code" type="text" placeholder="Have any coupon?"
                 class="input input-bordered input-success w-full max-w-xs rounded-l-lg rounded-r-none" />
-              <button class="btn btn-success rounded-r-lg rounded-l-none">
+              <button id="apply" class="btn btn-success rounded-r-lg rounded-l-none">
                 Apply
               </button>
             </div>
             <div
               class="grand-total w-full p-4 font-inter text-lg border-2 border-green-800 bg-green-300 rounded-lg font-medium flex justify-between">
               <p class="total-text">Grand Total</p>
-              <h2>BDT <span id="grand-total">900</span></h2>
+              <h2>BDT <span id="grand-total">00</span></h2>
             </div>
             <form id="my-form" class="w-full my-10 text-[#030712] font-inter text-lg font-semibold space-y-5">
               <label class="form-control w-full">
@@ -443,8 +435,25 @@
                 </div>
                 <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full" />
               </label>
-              <button class="btn w-full bg-[#1dd100] text-white hover:bg-[#1dd100ac] disabled:bg-[#1dd1003c] btn-wide"
-                disabled>Wide</button>
+              <button class="btn w-full bg-[#1dd100] text-white hover:bg-[#1dd100ac] disabled:bg-[#1dd1003c] btn-wide"  onclick="my_modal_5.showModal()">Next</button>
+              <!-- Open the modal using ID.showModal() method -->
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-container bg-white flex justify-center items-center min-h-screen min-w-full">
+                  <div class="modal-box w-[45%] text-center flex flex-col justify-center items-center gap-6">
+                    <img src="images/success.png" alt="">
+                    <h2 class="text-green-600 font-raleway font-bold text-3xl">Success</h2>
+                    <h3 class="font-bold text-lg">Thank you for Booking Our Bus Seats. </h3>
+                    <h3 class="font-bold text-lg">We are working hard to find the best service and deals for you. </h3>
+                    <p class="py-4 text-lg font-normal">Shortly you will find a confirmation in your email.</p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="px-12 py-4 bg-green-500 text-white font-inter font-semibold text-xl rounded-full">Continue</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </dialog>
               <div class="links w-3/4 mx-auto text-xs font-normal flex justify-between">
                 <a href="http://">Terms & Conditions</a>
                 <a href="http://">Cancellation Policy</a>
