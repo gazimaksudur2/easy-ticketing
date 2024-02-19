@@ -17,6 +17,8 @@ const discountDiv = getByid("discount-div");
 const coupModal = getByid("coupon-modal");
 const couponDiv = getByid('apply-coupon-div');
 const couponApply = getByid("apply");
+const confirmBook = getByid('confirm');
+const phon = getByid('phone');
 
 function getID(targ) {
   return targ.id;
@@ -41,7 +43,11 @@ function selects(ele, id) {
     alert("You reached of your maximum ability of allocation.");
     return;
   }
-  ele.classList.add("bg-green-400");
+  if(selectedID.includes(id)){
+    alert("you have already selected this seat!!");
+    return;
+  }
+  ele.classList.add("bg-green-400", 'text-white');
   selectedID.push(id);
   filled.innerText = selectedID.length;
   avails.innerText = 40 - selectedID.length;
@@ -92,7 +98,7 @@ function couponCheck() {
     // coupModal.innerText = "You didn't selected any seat. Please select your seat at first.";
     return;
 } else {
-      message = "You entered invalid couponID. Press Ok before 10s otherwise this page will be stuck up.";
+      message = "You entered invalid couponID.";
     // coupModal.innerText = "You entered invalid couponID. Press Ok before 10s otherwise this page will be stuck up.";
     alert(message);
     return null;
