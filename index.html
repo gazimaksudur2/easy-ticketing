@@ -20,6 +20,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="images/bus.png" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap"
     rel="stylesheet" />
@@ -30,10 +31,10 @@
 </head>
 
 <body>
-  <header class="mx-20 mt-10">
+  <header class="mx-2 mt-4 lg:mx-20 lg:mt-10">
     <nav class="font-raleway">
       <div class="navbar bg-base-100">
-        <div class="navbar-start">
+        <div class="navbar-start gap-6">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -66,10 +67,10 @@
       </div>
     </nav>
   </header>
-  <main class="bg-white mt-10">
+  <main class="bg-white mt-8 lg:mt-10">
     <!-- Banner section goes here  -->
     <section
-      class="banner mx-20 mb-32 bg-[url('images/banner.png')] w-[92%] bg-cover min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8">
+      class="banner mx-4 mb-10  bg-cover min-h-[80vh] lg:min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8 lg:mx-20 lg:mb-32 bg-[url('images/banner.png')] lg:w-[92%]">
       <h1 class="font-raleway font-extrabold text-5xl text-center leading-snug">
         <span class="text-white">Your Ultimate Bus Ticketing Solution</span><br /><span
           class="text-6xl text-[#1DD100]">TransitEase Express</span>
@@ -84,13 +85,14 @@
         Buy Tickets
       </button>
     </section>
+
     <!-- Best offers section -->
-    <section class="best-offers mx-20 mb-32 space-y-12 flex flex-col items-center">
+    <section class="best-offers mx-12 mb-10 space-y-6 lg:mx-20 lg:mb-32 lg:space-y-12 flex flex-col items-center">
       <h2 class="font-raleway text-center text-[#030712] text-4xl font-bold">
         Best offers for you
       </h2>
-      <div class="coupon-container flex justify-center gap-10">
-        <div class="new-coupon w-[35rem] flex justify-between bg-amber-400 rounded-2xl">
+      <div class="coupon-container flex flex-col lg:flex-row lg:justify-center gap-10">
+        <div class="new-coupon w-[100%] lg:w-[38rem] flex justify-between bg-amber-400 rounded-2xl">
           <div class="left flex flex-col justify-center space-y-2 py-10 pl-10 font-inter">
             <h2 class="text-[#030712CC] text-3xl font-extrabold">15% off</h2>
             <h5 class="text-[#030712CC] text-xl font-semibold">
@@ -100,7 +102,7 @@
               use by February 2024
             </p>
           </div>
-          <div class="p-0 divider text-white m-0 min-h-full">
+          <div class="p-0 hidden lg:flex divider text-white m-0 min-h-full">
             <img class="h-full object-cover" src="images/cupon-devider.png" alt="" />
           </div>
           <div class="right flex flex-col justify-center items-center py-10 pr-10 space-y-2 font-inter">
@@ -110,8 +112,8 @@
             <p class="text-[#03071280]">Coupon Code</p>
           </div>
         </div>
-        <div class="couple-coupon w-[38rem] flex justify-between bg-pink-400 rounded-2xl">
-          <div class="left flex flex-col justify-center space-y-2 py-10 pl-10 font-inter">
+        <div class="couple-coupon w-full lg:w-[38rem] flex justify-between gap-4 bg-pink-400 rounded-2xl">
+          <div class="left flex flex-col justify-center space-y-2 py-8 pl-6 lg:py-10 lg:pl-10 font-inter">
             <h2 class="text-[#030712CC] text-3xl font-extrabold">20% off</h2>
             <h5 class="text-[#030712CC] text-xl font-semibold">
               on first couple purchase
@@ -120,10 +122,10 @@
               use by March 2024
             </p>
           </div>
-          <div class="p-0 divider text-white m-0 min-h-full">
+          <div class="p-0 hidden lg:flex divider text-white m-0 min-h-full">
             <img class="h-full p-0 object-cover" src="images/cupon-devider.png" alt="" />
           </div>
-          <div class="right flex flex-col justify-center items-center py-10 pr-10 space-y-2 font-inter">
+          <div class="right flex flex-col justify-center items-center py-10 pr-8 lg:pr-10 space-y-2 font-inter">
             <h2 class="text-[#030712] text-3xl font-bold font-raleway">
               Couple 20
             </h2>
@@ -131,14 +133,14 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-outline btn-success px-8 py-4 capitalize">
+      <button class="btn btn-outline font-bold text-[16px] btn-success px-8 py-4 capitalize">
         See all offers
       </button>
     </section>
     <!-- Buying tickets section -->
     <section id="bus-section"
       class="activity-container flex flex-col justify-center items-center m-0 border-t-4 border-[#1DD100] rounded-full">
-      <div class="description w-1/2 p-20 flex flex-col items-center text-center justify-center gap-6">
+      <div class="description lg:w-1/2 p-8 lg:p-20 flex flex-col items-center text-center justify-center gap-6">
         <h2 class="font-raleway text-4xl font-bold text-[#030712]">
           TransitEase Express
         </h2>
@@ -148,13 +150,13 @@
         </p>
       </div>
     </section>
-    <section class="activity-section pb-20 mx-40 mb-32">
-      <div class="trip-info bg-[#e6e7e27a] -pb-10 p-0 rounded-xl flex gap-10">
-        <div class="py-8 pl-12 w-2/3">
-          <div class="flex flex-col justify-between items-center lg:flex-row">
+    <section class="activity-section mx-6 pb-10 lg:pb-20 lg:mx-40 mb-32">
+      <div class="trip-info bg-[#e6e7e27a] p-4 lg:p-0 rounded-xl flex flex-col lg:flex-row gap-4 lg:gap-10">
+        <div class="py-8 w-full lg:pl-12 lg:w-2/3">
+          <div class="flex justify-between items-center flex-row">
             <div class="info flex items-center gap-2">
               <img class="object-cover scale-75" src="images/bus-logo.png" alt="" />
-              <div class="bus-info">
+              <div class="bus-info flex flex-col">
                 <h2 class="font-raleway text-[#030712] text-3xl font-bold">
                   TransitEase Express
                 </h2>
@@ -163,11 +165,15 @@
                 </h5>
               </div>
             </div>
-            <div class="allocation">
-              <button class="btn capitalize bg-[#1DD1002A] text-[#1dd100cc] font-inter font-semibold text-lg">
-                <img src="images/seat-green.png" alt="" />
-                <span id="avail" class="">40</span>
-                <span class="capitalize">seats left</span>
+            <div class="allocation flex p-2">
+              <button class="capitalize bg-[#1DD1002A] text-[#1dd100cc] flex flex-col lg:flex-row gap-2 items-center rounded-xl p-2 font-inter font-semibold text-lg">
+                <div class="img-div">
+                  <img src="images/seat-green.png" alt="" />
+                </div>
+                <div class="div">
+                  <span id="avail" class="">40</span>
+                  <span class="capitalize">seats left</span>
+                </div>
               </button>
             </div>
           </div>
@@ -188,7 +194,7 @@
                 9:00 pm
               </h5>
             </div>
-            <div class="labels flex justify-between gap-2">
+            <div class="labels flex flex-col lg:flex-row justify-between gap-2">
               <button class="text-[#030712AC] text-[16px] btn capitalize">
                 Boarding point - abdullahpur
               </button>
@@ -201,10 +207,10 @@
             </div>
           </div>
         </div>
-        <div class="divider m-0 h-full">
+        <div class="hidden lg:flex divider m-0 h-full">
           <img src="images/info-devider.png" alt="" />
         </div>
-        <div class="fare w-1/6 space-y-1 flex flex-col justify-center items-center">
+        <div class="fare lg:w-1/6 space-y-1 flex flex-col justify-center items-center">
           <img class="mb-4" src="images/fare.png" alt="" />
           <h2 class="font-raleway text-3xl font-bold text-[#030712]">
             550 Taka
@@ -215,8 +221,8 @@
         </div>
       </div>
       <!-- account container starts here  -->
-      <div id="book-section" class="account-container mt-10 p-0 bg-[#e6f2a87a] rounded-xl flex gap-10">
-        <div class="seats w-3/5 py-8 pl-12 flex flex-col gap-4">
+      <div id="book-section" class="account-container mt-10 p-0 bg-[#e6f2a87a] rounded-xl flex flex-col lg:flex-row gap-10">
+        <div class="seats w-full lg:w-3/5 py-8 px-4 lg:pl-12 flex flex-col gap-4">
           <h2 class="font-raleway text-2xl font-semibold">
             Select Your Seat
           </h2>
@@ -236,133 +242,133 @@
             </button>
           </div>
           <div class="seat-container mt-5 flex flex-col justify-between gap-4">
-            <div id="a" class="a-seats flex items-center">
-              <p class="w-1/6 text-center">A</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="a1" class="btn px-8">A1</button>
-                  <button id="a2" class="btn px-8">A2</button>
+            <div id="a" class="a-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">A</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="a1" class="btn px-6 lg:px-8">A1</button>
+                  <button id="a2" class="btn px-6 lg:px-8">A2</button>
                 </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="a3" class="btn px-8">A3</button>
-                  <button id="a4" class="btn px-8">A4</button>
-                </div>
-              </div>
-            </div>
-            <div id="b" class="b-seats flex items-center">
-              <p class="w-1/6 text-center">B</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="b1" class="btn px-8">B1</button>
-                  <button id="b2" class="btn px-8">B2</button>
-                </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="b3" class="btn px-8">B3</button>
-                  <button id="b4" class="btn px-8">B4</button>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="a3" class="btn px-6 lg:px-8">A3</button>
+                  <button id="a4" class="btn px-6 lg:px-8">A4</button>
                 </div>
               </div>
             </div>
-            <div id="c" class="c-seats flex items-center">
-              <p class="w-1/6 text-center">C</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="c1" class="btn px-8">C1</button>
-                  <button id="c2" class="btn px-8">C2</button>
+            <div id="b" class="b-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">B</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="b1" class="btn px-6 lg:px-8">B1</button>
+                  <button id="b2" class="btn px-6 lg:px-8">B2</button>
                 </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="c3" class="btn px-8">C3</button>
-                  <button id="c4" class="btn px-8">C4</button>
-                </div>
-              </div>
-            </div>
-            <div id="d" class="d-seats flex items-center">
-              <p class="w-1/6 text-center">D</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="d1" class="btn px-8">D1</button>
-                  <button id="d2" class="btn px-8">D2</button>
-                </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="d3" class="btn px-8">D3</button>
-                  <button id="d4" class="btn px-8">D4</button>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="b3" class="btn px-6 lg:px-8">B3</button>
+                  <button id="b4" class="btn px-6 lg:px-8">B4</button>
                 </div>
               </div>
             </div>
-            <div id="e" class="e-seats flex items-center">
-              <p class="w-1/6 text-center">E</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="e1" class="btn px-8">E1</button>
-                  <button id="e2" class="btn px-8">E2</button>
+            <div id="c" class="c-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">C</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="c1" class="btn px-6 lg:px-8">C1</button>
+                  <button id="c2" class="btn px-6 lg:px-8">C2</button>
                 </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="e3" class="btn px-8">E3</button>
-                  <button id="e4" class="btn px-8">E4</button>
-                </div>
-              </div>
-            </div>
-            <div id="f" class="f-seats flex items-center">
-              <p class="w-1/6 text-center">F</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="f1" class="btn px-8">F1</button>
-                  <button id="f2" class="btn px-8">F2</button>
-                </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="f3" class="btn px-8">F3</button>
-                  <button id="f4" class="btn px-8">F4</button>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="c3" class="btn px-6 lg:px-8">C3</button>
+                  <button id="c4" class="btn px-6 lg:px-8">C4</button>
                 </div>
               </div>
             </div>
-            <div id="g" class="g-seats flex items-center">
-              <p class="w-1/6 text-center">G</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="g1" class="btn px-8">G1</button>
-                  <button id="g2" class="btn px-8">G2</button>
+            <div id="d" class="d-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">D</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="d1" class="btn px-6 lg:px-8">D1</button>
+                  <button id="d2" class="btn px-6 lg:px-8">D2</button>
                 </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="g3" class="btn px-8">G3</button>
-                  <button id="g4" class="btn px-8">G4</button>
-                </div>
-              </div>
-            </div>
-            <div id="h" class="h-seats flex items-center">
-              <p class="w-1/6 text-center">H</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="h1" class="btn px-8">H1</button>
-                  <button id="h2" class="btn px-8">H2</button>
-                </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="h3" class="btn px-8">H3</button>
-                  <button id="h4" class="btn px-8">H4</button>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="d3" class="btn px-6 lg:px-8">D3</button>
+                  <button id="d4" class="btn px-6 lg:px-8">D4</button>
                 </div>
               </div>
             </div>
-            <div id="i" class="i-seats flex items-center">
-              <p class="w-1/6 text-center">I</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="i1" class="btn px-8">I1</button>
-                  <button id="i2" class="btn px-8">I2</button>
+            <div id="e" class="e-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">E</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="e1" class="btn px-6 lg:px-8">E1</button>
+                  <button id="e2" class="btn px-6 lg:px-8">E2</button>
                 </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="i3" class="btn px-8">I3</button>
-                  <button id="i4" class="btn px-8">I4</button>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="e3" class="btn px-6 lg:px-8">E3</button>
+                  <button id="e4" class="btn px-6 lg:px-8">E4</button>
                 </div>
               </div>
             </div>
-            <div id="j" class="j-seats flex items-center">
-              <p class="w-1/6 text-center">J</p>
-              <div class="seat-div w-5/6 flex justify-between">
-                <div class="left w-[40%] flex flex-row justify-between items-center">
-                  <button id="j1" class="btn px-8">J1</button>
-                  <button id="j2" class="btn px-8">J2</button>
+            <div id="f" class="f-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">F</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="f1" class="btn px-6 lg:px-8">F1</button>
+                  <button id="f2" class="btn px-6 lg:px-8">F2</button>
                 </div>
-                <div class="right w-[40%] flex flex-row justify-between items-center gap-8">
-                  <button id="j3" class="btn px-8">J3</button>
-                  <button id="j4" class="btn px-8">J4</button>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="f3" class="btn px-6 lg:px-8">F3</button>
+                  <button id="f4" class="btn px-6 lg:px-8">F4</button>
+                </div>
+              </div>
+            </div>
+            <div id="g" class="g-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">G</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="g1" class="btn px-6 lg:px-8">G1</button>
+                  <button id="g2" class="btn px-6 lg:px-8">G2</button>
+                </div>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="g3" class="btn px-6 lg:px-8">G3</button>
+                  <button id="g4" class="btn px-6 lg:px-8">G4</button>
+                </div>
+              </div>
+            </div>
+            <div id="h" class="h-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">H</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="h1" class="btn px-6 lg:px-8">H1</button>
+                  <button id="h2" class="btn px-6 lg:px-8">H2</button>
+                </div>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="h3" class="btn px-6 lg:px-8">H3</button>
+                  <button id="h4" class="btn px-6 lg:px-8">H4</button>
+                </div>
+              </div>
+            </div>
+            <div id="i" class="i-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">I</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="i1" class="btn px-6 lg:px-8">I1</button>
+                  <button id="i2" class="btn px-6 lg:px-8">I2</button>
+                </div>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="i3" class="btn px-6 lg:px-8">I3</button>
+                  <button id="i4" class="btn px-6 lg:px-8">I4</button>
+                </div>
+              </div>
+            </div>
+            <div id="j" class="j-seats w-full flex items-center">
+              <p class="w-1/12 lg:w/6 text-center">J</p>
+              <div class="seat-div w-full lg:w-5/6 flex justify-between">
+                <div class="left lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="j1" class="btn px-6 lg:px-8">J1</button>
+                  <button id="j2" class="btn px-6 lg:px-8">J2</button>
+                </div>
+                <div class="right lg:w-[40%] flex flex-row justify-between items-center gap-8">
+                  <button id="j3" class="btn px-6 lg:px-8">J3</button>
+                  <button id="j4" class="btn px-6 lg:px-8">J4</button>
                 </div>
               </div>
             </div>
@@ -371,11 +377,11 @@
           <p>*To apply coupon code you have to select at least 4 seats and also you cannot select more than 4 seats at a time.</p>
         </div>
         <!-- <div class="divider divide-dashed lg:divider-horizontal"></div>  -->
-        <div class="accounts w-1/3 p-8 space-y-1 border-l-2 border-dashed border-gray-300">
-          <h2 class="font-raleway pb-5 text-2xl font-semibold border-b-2 border-dashed border-gray-300">
+        <div class="accounts lg:w-1/3 p-4 flex flex-col lg:p-8 space-y-1 lg:border-l-2 border-dashed border-gray-300">
+          <h2 class="font-raleway pb-5 text-center lg:text-start text-2xl font-semibold border-b-2 border-dashed border-gray-300">
             Confirm & Pay for Your Seat
           </h2>
-          <div class="confirm-box py-4 flex flex-col justify-between items-center gap-4">
+          <div class="confirm-box py-4 flex flex-col justify-center lg:justify-between items-center gap-4">
             <table id="table" class="table">
               <thead class="text-lg font-semibold">
                 <th>Seat <span id="filled" class="bg-green-500 text-white p-1 rounded-full">0</span>
@@ -468,16 +474,16 @@
       </div>
     </section>
   </main>
-  <footer class="py-10 px-28 space-y-10 bg-[#030712] text-neutral-content flex-col justify-between">
-    <div class="upper-container footer justify-between text-neutral-content">
-      <aside class="w-3/4 space-y-3">
+  <footer class="py-10 px-10 lg:px-28 space-y-10 bg-[#030712] text-neutral-content flex-col justify-between">
+    <div class="upper-container footer flex flex-col lg:flex-row items-center justify-center lg:justify-between text-neutral-content">
+      <aside class="w-3/4 space-y-3 text-center flex flex-col justify-center items-center lg:items-start">
         <h2 class="text-3xl font-raleway font-bold">TransitEase Express</h2>
         <p class="text-[16px] ">
           TransitEase Ticketing is a digital platform to make your journeys
           awesome and memorable.
         </p>
       </aside>
-      <nav class="flex flex-col items-end">
+      <nav class="flex flex-col items-center lg:items-end justify-center lg:justify-between text-neutral-content">
         <h6 class="footer-title text-2xl">Download our app</h6>
         <div class="grid grid-flow-col gap-4">
           <a>
@@ -487,12 +493,12 @@
       </nav>
     </div>
     <hr class="border-dashed" />
-    <div class="lower-container flex justify-between">
+    <div class="lower-container flex flex-col-reverse items-center gap-4 lg:flex-row justify-between">
       <p>Copyright © 2024 - All right reserved</p>
-      <div class="terms-container w-1/3 flex justify-between">
-        <p class="capitalize">Terms & conditions</p>
-        <p class="capitalize">return & refund policy</p>
-        <p class="capitalize">Privacy policy</p>
+      <div class="terms-container lg:w-1/2 items-center justify-center flex flex-wrap gap-3 lg:flex-nowrap lg:justify-between">
+        <p class="capitalize min-w-48 text-center">return & refund policy</p>
+        <p class="capitalize min-w-48 text-center">Terms & conditions</p>
+        <p class="capitalize min-w-48 text-center">Privacy policy</p>
       </div>
     </div>
   </footer>
