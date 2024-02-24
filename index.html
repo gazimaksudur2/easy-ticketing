@@ -70,7 +70,7 @@
   <main class="bg-white mt-8 lg:mt-10">
     <!-- Banner section goes here  -->
     <section
-      class="banner mx-4 mb-10  bg-cover min-h-[80vh] lg:min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8 lg:mx-20 lg:mb-32 bg-[url('images/banner.png')] lg:w-[92%]">
+      class="banner lg:relative mx-4 mb-10  bg-cover min-h-[80vh] lg:min-h-screen bg-no-repeat object-cover bg-center rounded-3xl flex flex-col items-center justify-center space-y-8 lg:mx-20 lg:mb-32 bg-[url('images/banner.png')] lg:w-[92%]">
       <h1 class="font-raleway font-extrabold text-5xl text-center leading-snug">
         <span class="text-white">Your Ultimate Bus Ticketing Solution</span><br /><span
           class="text-6xl text-[#1DD100]">TransitEase Express</span>
@@ -84,6 +84,54 @@
         class="bg-[#1DD100] border-none text-[#030712] font-raleway text-xl font-bold py-4 px-8 rounded-xl active:scale-95">
         Buy Tickets
       </button>
+      <!-- Extra cards section for long device -->
+    <section class="banner-cards hidden lg:absolute -bottom-16 w-full lg:flex flex-col lg:flex-row justify-center gap-6">
+      <div class="cards bg-white lg:w-[20%] p-8 border-b-4 border-[#1dd100] rounded-2xl flex justify-between gap-3">
+        <img src="images/people.png" alt="">
+        <div class="card-texts font-inter text-start flex flex-col gap-2">
+          <h3 class="text-4xl font-bold">500K+</h3>
+          <p class="text-lg font-medium text-[#0307129c]">Registered Users</p>
+        </div>
+      </div>
+      <div class="cards bg-white lg:w-[20%] p-8 border-b-4 border-[#1dd100] rounded-2xl flex justify-between gap-3">
+        <img src="images/ticket-cupon.png" alt="">
+        <div class="card-texts font-inter text-start">
+          <h3 class="text-4xl font-bold">1.7 lacks</h3>
+          <p class="text-lg font-medium text-[#0307129c]">Tickets sold</p>
+        </div>
+      </div>
+      <div class="cards bg-white lg:w-[20%] p-8 border-b-4 border-[#1dd100] rounded-2xl flex justify-between gap-3">
+        <img src="images/stoppage.png" alt="">
+        <div class="card-texts font-inter text-start">
+          <h3 class="text-4xl font-bold">80K+</h3>
+          <p class="text-lg font-medium text-[#0307129c]">Rental partners</p>
+        </div>
+      </div>
+    </section>
+    </section>
+     <!-- Extra cards section for small device -->
+     <section class="banner-cards px-6 py-10 -bottom-16 w-full flex flex-col lg:hidden justify-center gap-10">
+      <div class="cards bg-white lg:w-[20%] p-8 border-b-4 shadow-md border-[#1dd100] rounded-2xl flex justify-between gap-3">
+        <img src="images/people.png" alt="">
+        <div class="card-texts font-inter text-start flex flex-col gap-2">
+          <h3 class="text-4xl font-bold">500K+</h3>
+          <p class="text-lg font-medium text-[#0307129c]">Registered Users</p>
+        </div>
+      </div>
+      <div class="cards bg-white lg:w-[20%] p-8 border-b-4 shadow-md border-[#1dd100] rounded-2xl flex justify-between gap-3">
+        <img src="images/ticket-cupon.png" alt="">
+        <div class="card-texts font-inter text-start">
+          <h3 class="text-4xl font-bold">1.7 lacks</h3>
+          <p class="text-lg font-medium text-[#0307129c]">Tickets sold</p>
+        </div>
+      </div>
+      <div class="cards bg-white lg:w-[20%] p-8 border-b-4 shadow-md border-[#1dd100] rounded-2xl flex justify-between gap-3">
+        <img src="images/stoppage.png" alt="">
+        <div class="card-texts font-inter text-start">
+          <h3 class="text-4xl font-bold">80K+</h3>
+          <p class="text-lg font-medium text-[#0307129c]">Rental partners</p>
+        </div>
+      </div>
     </section>
 
     <!-- Best offers section -->
@@ -403,9 +451,9 @@
               </h3>
               <h2>BDT <span id="discount" class="font-bold text-3xl"> 200  </span><span class="text-2xl text-red-800"> OFF</span></h2>
             </div>
-            <div id="apply-coupon-div" class="coupon-apply w-full flex">
+            <div id="apply-coupon-div" class="coupon-apply w-[100%] flex">
               <input id="coupon-code" type="text" placeholder="Have any coupon?"
-                class="input input-bordered input-success w-full max-w-xs rounded-l-lg rounded-r-none" disabled/>
+                class="input input-bordered input-success w-[85%] max-w-lg rounded-l-lg rounded-r-none" disabled/>
               <button id="apply" class="btn btn-success rounded-r-lg rounded-l-none" disabled>
                 Apply
               </button>
